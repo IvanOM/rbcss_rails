@@ -5,7 +5,7 @@ module RbcssRails
     self.default_mime_type = "text/css"
     
     def prepare
-      @data = "$LOAD_PATH.unshift('#{File.dirname(File.expand_path(@file))}');require 'css';CSS.style do;#{File.read(@file)}\nend"
+      @data = "$LOAD_PATH.unshift('#{File.dirname(File.expand_path(@file))}');require 'css';css = CSS.new; css.style do;#{File.read(@file)}\nend"
     end
 
     def evaluate(scope, locals, &block)
