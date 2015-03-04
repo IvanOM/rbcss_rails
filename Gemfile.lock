@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rbcss_rails (0.0.1)
+    rbcss_rails (0.0.2)
       rails (~> 4.2)
       rbcss (~> 0)
 
