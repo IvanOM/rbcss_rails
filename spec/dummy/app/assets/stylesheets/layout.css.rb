@@ -1,5 +1,5 @@
 require 'rbcss_helper'
 
 to('body'){
-  background @primary_color
+  background Site::PRIMARY_COLOR
 }

@@ -11,7 +11,7 @@ RSpec.describe RbcssRails::Template, type: :class do
   
   describe "rbcss processing" do
     it "generates css" do
-      expect(@sprockets['dummy/app/assets/stylesheets/layout.css.rb'].to_s).to eql "body{background:green;}"
+      expect(@sprockets['dummy/app/assets/stylesheets/layout.css.rb'].to_s).to eq "body{background:green;}"
     end
   end
 end

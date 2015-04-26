@@ -12,3 +12,4 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+gem 'rbcss', git: "https://github.com/IvanOM/rbcss.git", branch: "ast"

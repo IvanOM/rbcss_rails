@@ -1,3 +1,3 @@
-$css.style do
-  @primary_color = "green"
+module Site
+  PRIMARY_COLOR = "green"
 end
