@@ -6,8 +6,8 @@ module RbcssRails
     end
     
     config.to_prepare do |c|
-      Rails.application.assets.register_mime_type "text/css", ".rb"
-      Rails.application.assets.register_engine '.rb', RbcssRails::Template
+      Rails.application.assets.register_mime_type "text/css", ".rbcss"
+      Rails.application.assets.register_engine '.rbcss', Sprockets::RbcssTemplate
     end
   end
 end
